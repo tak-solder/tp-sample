@@ -22,7 +22,7 @@ class View
 
         $html = file_get_contents($file);
 
-        preg_replace_callback('/\{#(\w+)#}/', function ($m) {
+        echo preg_replace_callback('/\{#(\w+)#}/', function ($m) {
             if (!isset($this->vars[$m[1]])) {
                 throw new \Exception('unknown var: '.$m[1]);
             }
