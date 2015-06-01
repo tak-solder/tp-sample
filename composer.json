@@ -1,0 +1,8 @@
+{
+	"name": "sample/template",
+	"autoload": {
+		"psr-4": {
+			"Sample\\Template\\": "src/Template/"
+		}
+	}
+}
